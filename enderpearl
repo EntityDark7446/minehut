@@ -3,4 +3,4 @@ command /enderpearl:
    permission: op
    permission message: "You can't use that command!"
    trigger:
-      give player 16 Enderpearl
+      give player 16 Enderpearls
