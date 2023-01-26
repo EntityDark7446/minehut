@@ -1,4 +1,4 @@
--- MineHut "starter loot" command
+-- MineHut "starter loot" command by #EntityDark7446
 command /starterloot:
    permission: 1
    trigger:
