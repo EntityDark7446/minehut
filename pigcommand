@@ -1,0 +1,6 @@
+-- MineHut "pig command" by #EntityDark7446
+command /pig:
+   permission: op
+   permission message: "You can't use that command!"
+   trigger:
+       give player 10 porkchop
