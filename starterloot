@@ -1,0 +1,11 @@
+-- MineHut "starter loot" command
+command /starterloot:
+   permission: 1
+   trigger:
+      give player 1 Iron Sword
+      give player 1 Iron Axe
+      give player 1 Iron Pickaxe
+      give player 1 Iron Boots
+      give player 1 Iron Leggings
+      give player 1 Iron Chestplate
+      give player 1 Iron Helmet
