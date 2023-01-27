@@ -1,0 +1,3 @@
+command /discord:
+	trigger:
+		send "<link:https://discord.gg/Hn6cwMshUs>&9Click this to join DarkoCraft Discord server<reset>" to player
