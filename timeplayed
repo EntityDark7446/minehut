@@ -1,0 +1,10 @@
+on join:
+	if {join.date.%uuid of player%} is not set:
+		set {join.date.%uuid of player%} to now 
+		
+command /timeplayed [<offline player>]:
+	trigger:
+		if {join.date.%uuid of arg-1%} is set:
+			send "%arg-1% has played for: %arg-1%'s time played" to player
+		else:
+			send "You have never played before!" to player
