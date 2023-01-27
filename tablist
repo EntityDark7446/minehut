@@ -1,0 +1,9 @@
+options:
+	Header: &eWelcome to this server!%nl%
+	Footer: %nl%&2Online players: &3%{Online}%
+
+every second:
+	loop all players:
+		set loop-player's tab list header to "{@Header}"
+		set loop-player's tab list footer to "{@Footer}"
+		set {Online} to number of all players
