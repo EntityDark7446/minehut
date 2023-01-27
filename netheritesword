@@ -1,0 +1,6 @@
+# MineHut "netheritesword" command by #EntityDark7446
+command /netheritesword:
+	permission: op
+	permission message: "You can't use that command!"
+	trigger:
+		give player 1 Netherite Sword
