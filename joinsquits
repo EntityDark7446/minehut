@@ -1,0 +1,8 @@
+on join:
+	if player has played before:
+		set join message to "[&2+&f] &2%player% has joined the server!"
+	else:
+		set join message to "[&3+&f] &3%player% has joined the server for the first time!"
+
+on quit:
+	set quit message to "[&4-&f] &4%player% has left the server!"
