@@ -1,8 +1,9 @@
 on join:
 	if player has played before:
 		set join message to "[&2+&f] &2%player% has joined the server!"
+		send "&e Welcome back, %player%!" to player
 	else:
 		set join message to "[&3+&f] &3%player% has joined the server for the first time!"
-
+		send "Use command &5/starterloot&f to get starter loot" to player
 on quit:
 	set quit message to "[&4-&f] &4%player% has left the server!"
