@@ -1,0 +1,9 @@
+command /report <player> <text>:
+  cooldown: 10 minutes
+  usage: &c/report (player) (reason)
+  trigger:
+    loop all players:
+      send "<----------->" to loop-player
+      send "&4&l[REPORT] &c%arg-1% &fwas reported by &a%player% &ffor the reason: &c%arg-2%&f." to loop-player
+      send "<----------->" to loop-player
+    send "&aYour report on &c%arg-1% &ahas been sent to all online staff members!" to player
