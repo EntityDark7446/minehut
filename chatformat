@@ -1,0 +1,5 @@
+on chat:
+	if player is op:
+		set the chat format to "[&bOP&f] &9%player% &f» &b%message%"
+	else:
+		set the chat format to "&f[&8GUEST&f] &8%player% » %message%"
