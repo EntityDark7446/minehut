@@ -1,0 +1,5 @@
+on right click on wool:
+	if event-block is white wool:
+		set event-block to black wool
+	else if event-block is black wool:
+		set event-block to white wool
