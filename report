@@ -8,4 +8,4 @@ command /report <player> <text>:
       send "<----------->" to loop-player
     send "&aYour report on &c%arg-1% &ahas been sent to all online staff members!" to player
     
-    #Credits to: @bokbok6317 on YouTube
+#Credits to: @bokbok6317 on YouTube
