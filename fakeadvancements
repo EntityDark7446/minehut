@@ -1,0 +1,7 @@
+#I made this command specially for killing Ender Dragon
+command /fakeadvancement:
+	permission: op
+	cooldown: 1 year
+	cooldown message: &4You have to wait 1 year to use that command again!
+	trigger:
+		send "%player% has made an advancement <tooltip:&2Kill the Ender Dragon>[&2Free the End&f]!"
