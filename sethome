@@ -1,0 +1,32 @@
+command /sethome:
+	description: Sets home teleportation block
+	cooldown: 10 minutes
+	cooldown message: &4You need to wait for cooldown of 10 minutes to end!	
+	trigger:
+		set {home.%uuid of player%} to location of block at location of player
+		send "[&2Server&f] &2Successfully created home at: &5%{home.%uuid of player%}%&f!" to player
+		send "[&2Server&f] &6%player% &2successfully created home!"
+		
+command /home:
+	trigger:
+		if {home.%uuid of player%} is set:
+			send "[Server] Teleporting home..." to player
+			wait 1 second
+			send "[Server] Teleporting home in &63&f..." to player
+			wait 1 second
+			send "[Server] Teleporting home in &62&f..." to player
+			wait 1 second
+			send "[Server] Teleporting home in &61&f..." to player
+			wait 1 second
+			teleport player to {home.%uuid of player%}
+			send "[Server] &2Successfully teleported home!" to player
+		if {home.%uuid of player%} is not set:
+			send "[Server] &4You don't have a home! To make one use &6/sethome&4 command!"
+			wait 2 seconds
+command /delhome:
+	description: Delete your home teleportation block
+	trigger:
+		clear {home.%uuid of player%}
+		send "[&2Server&f] &2Successfully deleted current home!" to player
+		wait 2 seconds
+		send "[&2Server&f] &4You will no longer be available to teleport to your past home! To make a new home, use &6/sethome&4 command!" to player
