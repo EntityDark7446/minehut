@@ -1,0 +1,9 @@
+command /duplicate:
+	aliases: dupe
+	cooldown: 5 seconds
+	cooldown message: &4You need to wait until cooldown of 5 seconds ends! 
+	permission: op
+	trigger:
+		give player player's held item
+		if player's held item is air:
+			send "&4You need to hold an item!" to player
