@@ -1,0 +1,6 @@
+command /bedcraftitems:
+	cooldown: 2 hours
+	cooldown message: &4You can't use that command until cooldown of 2 hour ends!
+	trigger:
+		give player 3 White Wool
+		give player 3 Oak Planks
