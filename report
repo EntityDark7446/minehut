@@ -7,3 +7,5 @@ command /report <player> <text>:
       send "&4&l[REPORT] &c%arg-1% &fwas reported by &a%player% &ffor the reason: &c%arg-2%&f." to loop-player
       send "<----------->" to loop-player
     send "&aYour report on &c%arg-1% &ahas been sent to all online staff members!" to player
+    
+    #Credits to: @bokbok6317 on YouTube
