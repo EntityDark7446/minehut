@@ -1,0 +1,11 @@
+command /fakejoin:
+	permission: op
+	permission message: "&4You can't use that command!"
+	trigger:
+		send "[&2+&f]&2 %player% has joined the server!"
+
+command /fakeleave:
+	permission: op
+	permission message: "&4You can't use that command!"
+	trigger:
+		send "[&4-&f]&4 %player% has left the server!"
